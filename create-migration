@@ -2,6 +2,6 @@
 
 description=${1:-newMigration}; # Take first argument for migration name, defaults to: "newMigration"
 timestamp=$(date +%Y%m%d%H%M); # Set timestamp in proper format
-fileName="$timestamp-$description.txt"; # Create the file name
+fileName="$timestamp-$description.sql"; # Create the file name
 touch "/Volumes/Development/data/websites/platform/migrations/$fileName"; # Create file in migrations directory
 echo "Created the following migration: /Volumes/Development/data/websites/platform/migrations/$fileName"; # Print output to user
